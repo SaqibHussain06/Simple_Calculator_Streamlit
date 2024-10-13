@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 
 # Set up the title and description for the calculator
 st.title("🧮 Simple Calculator with Graphics")
@@ -50,9 +49,5 @@ if st.button("Calculate"):
             else:
                 st.error("Error: Division by zero is not allowed.")
 
-        # Generate a simple bar chart to visualize the numbers and result
-        fig, ax = plt.subplots()
-        ax.bar(["First Number", "Second Number", "Result"], [num1, num2, result], color=['blue', 'orange', 'green'])
-        ax.set_title("Calculation Overview")
-        ax.set_ylabel("Value")
-        st.pyplot(fig)
+        # Generate a simple bar chart to visualize the numbers and result using Streamlit's native plotting
+        st.bar_chart({"Values": [num1, num2, result]}, width=0.7)
