@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set up the title and description for the calculator
-st.title("🧮 Simple Calculator with Graphics")
+st.title("🧮 Simple Calculator from Saqib")
 st.write("This calculator can perform basic arithmetic operations: addition, subtraction, multiplication, and division.")
 
 # Input fields for numbers
